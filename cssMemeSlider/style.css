@@ -1,1 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height:100vh; 
+    background-color: rgb(109, 115, 115);
+    display: flex;
+    justify-content: center;
+}
+.slider{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: fit-content;
+  justify-content: space-between;
+}
+.under{
+    display: flex;
+    justify-content: space-between;
+}
+.under h2{
+    margin: 0;
+    font-weight: 100;
+    color: aliceblue;
+}
+.image img{
+  padding: 0;
+}
 
+.buttons{
+  width: fit-content;
+}
+.buttons input{
+   border-color: rgb(0, 0, 0);
+   color: rgb(0, 0, 0);
+   background-color: black;
+}
+.buttons input:active{
+
+}
+@media (max-width: 1280px)  {
+    html {
+        font-size: calc(100vw/1280*10);
+    }
+    body {
+        width: 12.8rem; 
+    }
+    .container{
+        width: 100vw;
+        height:100vh; 
+        background-color: rgb(109, 115, 115);
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    .slider{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      height: fit-content;
+      justify-content: space-between;
+    }
+    .under{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        margin-top: 2.5rem;
+    }
+    .under h2{
+        margin: 0;
+        font-size: 2.5rem ;
+        font-weight: 100;
+        color: aliceblue;
+    }
+    .image img{
+      border-radius: 1.2rem;
+      padding: 0;
+    }
+
+    .buttons{
+      width: fit-content;
+    }
+}
+
+@media (max-width: 768px)  {
+    html {
+        font-size: calc(100vw/768*10);
+    }
+    body {
+        width: 76.8rem; 
+    }
+    .container{
+        width: 100vw;
+        height:100vh; 
+        background-color: rgb(109, 115, 115);
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    .slider{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      height: fit-content;
+      justify-content: space-between;
+    }
+    .under{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        margin-top: 2.5rem;
+    }
+    .under h2{
+        margin: 0;
+        font-size: 2.5rem ;
+        font-weight: 100;
+        color: aliceblue;
+    }
+    .image img{
+      border-radius: 1.2rem;
+      padding: 0;
+    }
+
+    .buttons{
+      width: fit-content;
+    }
+    .buttons input{
+       border-color: rgb(97, 97, 235);
+       color: rgb(97, 97, 235);
+    }
+    .buttons input:active{
+
+    }
+}
