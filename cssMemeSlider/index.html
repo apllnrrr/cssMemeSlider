@@ -2,29 +2,44 @@
 <html lang="en">
  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-  <title>Mems</title>
-  <script src="index.js"></script>
+  <title>Main</title>
   <link rel="stylesheet" href="style.css">
  </head>
  <body>
-<div class = 'container'> 
- <div class = 'slider'>
-  <div class = 'slide'>
-      <div class = 'image'>
-        <img src = "mems/1.JPG">
-      </div>
-  </div>
-  <div class = "under">
-    <h2>Покушал</h2>
-    <div class = 'buttons'>
-      <input checked type = 'radio' name = "slider" id = 'radio-1'>
-      <input type = 'radio' name = "slider" id = 'radio-2'>
-      <input type = 'radio' name = "slider" id = 'radio-3'>
-      <input type = 'radio' name = "slider" id = 'radio-4'>
+  <div class = "container">
+    <div class = "content">
+     <input type="radio" name="point" id="slide1" checked>
+	 <input type="radio" name="point" id="slide2">
+	 <input type="radio" name="point" id="slide3">
+	 <input type="radio" name="point" id="slide4">
+     <div class = "slider">
+        <div class="slides slide1"></div>
+        <div class="slides slide2"></div>
+        <div class="slides slide3"></div>
+        <div class="slides slide4"></div>
+     </div>
+     <div class = "under-content">
+            <h2 class = "h-slide1">Покушал</h2>
+            <h2 class = "h-slide2">Зона комфорта</h2>
+            <h2 class = "h-slide3">Чудо</h2>
+            <h2 class = "h-slide4">Я</h2>
+      <div class = "buttons">
+        <div class = "label-zone">
+            <label for = "slide1" ></label>
+        </div>
+        <div class = "label-zone">
+            <label for = "slide2" ></label>
+        </div>
+        <div class = "label-zone">
+            <label for = "slide3"></label>
+        </div>
+        <div class = "label-zone">
+            <label for = "slide4"></label>
+        </div>
+       </div>
+     </div>
+     
     </div>
   </div>
- </div>
-</div>
  </body>
 </html>
