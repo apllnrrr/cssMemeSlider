@@ -59,10 +59,15 @@ html {
     justify-content: space-between;
 }
 .under-content h2{
-    display: none;
+    height: 2.5rem;
     font-size: 2.5rem;
     font-weight: 100;
     margin: 0;
+    display: flex;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.8s ease;
+    text-align: center;
 }
 .buttons{
     display: flex;
@@ -90,23 +95,17 @@ html {
  border-radius: 50%;
  background-color: rgb(91, 168, 207);
  transition: 0.5s ease;
- line-height: 4rem;
-}
-.buttons label:active{
- background-color: transparent;
- border: 0.2rem solid rgb(91, 168, 207);
- transition: 0.5s ease-in-out;
- transform: translateY(0);
+ line-height: 10rem;
+ order:1
 }
 
-.buttons label:hover, #slide1:checked ~ .buttons label:nth-of-type(1),
-#slide2:checked ~ .buttons label:nth-of-type(2),
-#slide3:checked ~ .buttons label:nth-of-type(3),
-#slide4:checked ~ .buttons label:nth-of-type(4){
-    background-color: transparent;
-    border: 0.2rem solid rgb(91, 168, 207);
+.buttons label:hover{
+    background-color: aliceblue;
+    border: none;
     transition: 0.2s ease;
     transform: translateY(0);
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 #slide1:checked ~ .slider > .slide1,
@@ -117,11 +116,12 @@ html {
 	transform: scale(1);
 }
 #slide1:checked ~ .under-content > .h-slide1,
-#slide2:checked ~ .under-content > .h-slide2,
-#slide3:checked ~ .under-content > .h-slide3,
-#slide4:checked ~ .under-content > .h-slide4 {
-    display: block;
+#slide2:checked ~ .under-content >.h-slide2,
+#slide3:checked ~ .under-content >.h-slide3,
+#slide4:checked ~ .under-content >.h-slide4 {
+    display: flex;
     transform: scale(1);
+    opacity: 1;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px){
@@ -152,16 +152,7 @@ html {
         height: 2rem;
         width: 2rem; 
        }
-       .buttons label:active{
-        border: 0.2rem solid rgb(91, 168, 207);
-       }
        
-       .buttons label:hover, #slide1:checked ~ .buttons label:nth-of-type(1),
-       #slide2:checked ~ .buttons label:nth-of-type(2),
-       #slide3:checked ~ .buttons label:nth-of-type(3),
-       #slide4:checked ~ .buttons label:nth-of-type(4){
-           border: 0.2rem solid rgb(91, 168, 207);
-       }
        
 }
 @media (min-width: 501px) and (max-width:1024px){
@@ -175,16 +166,7 @@ html {
         margin-bottom: 3rem;
         border-radius: 1rem;
     }
-    .buttons label:active{
-     border: 0.2rem solid rgb(91, 168, 207);
-    }
-    
-    .buttons label:hover, #slide1:checked ~ .buttons label:nth-of-type(1),
-    #slide2:checked ~ .buttons label:nth-of-type(2),
-    #slide3:checked ~ .buttons label:nth-of-type(3),
-    #slide4:checked ~ .buttons label:nth-of-type(4){
-        border: 0.2rem solid rgb(91, 168, 207);
-    }
+
 }
 @media (max-width: 500px){
        html {
@@ -195,8 +177,8 @@ html {
         width: inherit;
        }
        .slider{
-           width: 45rem;
-           height:45rem; 
+           width: 40rem;
+           height:40rem; 
            margin-bottom: 3rem;
        }
        .under-content{
